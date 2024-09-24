@@ -6,7 +6,7 @@ const UserLayout = ({ children }) => {
         <UserSidebar />
       </div>
 
-      <div className="col-span-10 bg-gray-100 h-screen">
+      <div className="col-span-10 bg-cyan-800 h-screen">
         {children}
       </div>
     </div>

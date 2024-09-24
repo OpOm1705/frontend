@@ -10,9 +10,9 @@ const Navbar = () => {
     setIsAuth(authCookie)
   })
   return (
-    <>
+    <div className='bg-cyan-800'>
       {isAuth === null && <LoadingIndicator />}
-      <nav className="bg-purple-800 p-4">
+      <nav className=" p-4">
         <div className="flex items-center justify-between">
           <div>
             <Link href="/" className="text-white mr-4">Home</Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   )
 }
 

@@ -10,8 +10,8 @@ const Profile = () => {
     }
   }, [data, isSuccess])
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+    <div className="flex items-center justify-center h-screen bg-cyan-800 text-white">
+      <div className="w-full max-w-md p-8 bg-cyan-800 rounded-xl shadow-xl shadow-slate-950">
         <h2 className="text-2xl font-bold mb-6 text-center">User Profile</h2>
         <div className="mb-4">
           <label className="block font-medium mb-2">Name: {user.name}</label>

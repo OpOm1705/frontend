@@ -44,8 +44,8 @@ const ResetPasswordConfirm = () => {
   })
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+    <div className="flex items-center justify-center h-screen bg-cyan-800">
+      <div className="w-full max-w-md p-8  bg-cyan-800 rounded-xl shadow-xl shadow-slate-950 text-white">
         <h2 className="text-2xl font-bold mb-6 text-center">Reset Password</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -58,7 +58,7 @@ const ResetPasswordConfirm = () => {
               name="password"
               value={values.password}
               onChange={handleChange}
-              className="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+              className="w-full border-gray-300 broder-2 bg-cyan-800 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
               placeholder="Enter your new password"
             />
             {errors.password && <div className="text-sm text-red-500 px-2">{errors.password}</div>}
@@ -73,7 +73,7 @@ const ResetPasswordConfirm = () => {
               name="password_confirmation"
               value={values.password_confirmation}
               onChange={handleChange}
-              className="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+              className="w-full border-gray-300 border-2 bg-cyan-800 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
               placeholder="Confirm your new password"
             />
             {errors.password_confirmation && <div className="text-sm text-red-500 px-2">{errors.password_confirmation}</div>}
@@ -81,7 +81,7 @@ const ResetPasswordConfirm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:bg-gray-400"
+            className="w-full bg-indigo-700 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:bg-gray-400"
             disabled={loading}>
             Reset Password
           </button>
