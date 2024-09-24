@@ -1,4 +1,5 @@
-import MessagePerson from "@/components/MessagePerson";
+import MessagePerson from "../../components/MesssagePerson";
+import StoreProvider from "../StoreProvider";
 
 export default function RootLayout({ children }) {
   return (

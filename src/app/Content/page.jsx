@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import MessagePerson from "@/components/MesssagePerson";
+import MessagePerson from "../../components/MesssagePerson";
 
 const Home = () => {
   // State to store typed message and sent messages
